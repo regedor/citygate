@@ -1,0 +1,61 @@
+# Rails ignores
+*.rbc
+*.sassc
+**.orig
+.sass-cache
+capybara-*.html
+.rspec
+rerun.txt
+/site_files/.bundle
+/site_files/Gemfile.lock
+/site_files/log/*
+/site_files/tmp/*
+/site_files/db/*.sqlite3
+/site_files/db/schema.rb
+/site_files/vendor/bundle
+/site_files/public/spec.html
+/site_files/public/system/*
+/site_files/coverage/
+/site_files/spec/tmp/*
+/site_files/rails_best_practices_output.html
+
+# Linux ignores
+.*
+*~
+*.sw[a-p]
+.directory
+
+# Vim ignores
+.*.sw[a-z]
+*.un~
+
+# OSX ignores
+.DS_Store?
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+
+# TextMate ignores
+*.tmproj
+*.tmproject
+tmtags
+
+# Handy Ant
+/site_files/public/fonts/*
+/site_files/public/logo.*
+/site_files/public/images/*
+/site_files/public/favicon.ico
+/site_files/public/stylesheets/themes/*
+/site_files/public/stylesheets/partials/*
+/site_files/app/views/layouts/application.html.erb
+/site_files/config/*.yml
+/site_files/config/config.local
+/site_files/public/stylesheets/backend.css
+/site_files/public/stylesheets/frontend.css
+/site_files/public/stylesheets/backend-extras.css
+/site_files/public/stylesheets/frontend-extras.css
+/site_files/public/javascripts/frontend.js
+/site_files/public/javascripts/backend.js
+*.xls
+*.bak
