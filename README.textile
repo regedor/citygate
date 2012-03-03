@@ -1,0 +1,76 @@
+h1. Citygate
+
+Simple authentication and user management Engine.
+
+h2. More Information
+
+Citygate is a Mountable Engine that provides user model with sign up and log in, admin backend for managing users and a simple comunication system.
+
+h2. Required Gems
+
+This application requires this gems:
+
+* "rails":http://rubygems.org/gems/rails
+
+h2. Dependencies
+
+To use this application, you will need:
+
+* The Ruby language (1.9.2 or higher)
+* Rails (version 3.0.4 or newer)
+
+h2. Installing the Application
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+h2. Getting Started
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+h2. Documentation and Support
+
+This is the only documentation.
+
+h4. Issues
+
+Not found.
+
+h2. Similar Projects
+
+* https://github.com/zamith/AppStarter
+
+h2. Contributing
+
+If you make improvements to this application, please share with others.
+
+* Fork the project on GitHub.
+* Make your feature addition or bug fix.
+* Commit with Git.
+* Send the author a pull request.
+
+If you add functionality to this application, create an alternative implementation, or build an application that is similar, please contact me and I'll add a note to the README so that others can find your work.
+
+h2. Credits
+
+All Group Buddies Team.
+
+h2. License
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
