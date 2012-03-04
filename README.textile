@@ -21,10 +21,40 @@ To use this application, you will need:
 
 h2. Installing the Application
 
-Add to you routes:
-  mount Citygate::Engine => "/citygate"
+* Edit your Gemfile or gemspec to add a dependency on the citygate gem.
+* <tt>bundle update</tt>
+* <tt>rake citygate:install:migrations</tt>
+* <tt>rake migrate</tt>
+* Edit <tt>config/routes.rb</tt>, adding this line:
+  mount Citygate::Engine => '/'
+* Copy http://raw.github.com/plataformatec/devise/master/lib/generators/templates/devise.rb into <tt>config/initializers/devise.rb</tt> and edit it.
 
-rake citygate:install:migrations
+** Change <tt>config.mailer_sender</tt> to a valid address of yours.
+  ** Change the ORM configuration line to
+      require 'devise/orm/active_record'
+    if you are using ActiveRecord as your ORM (Rails defaults to this)
+    or
+      require 'devise/orm/mongoid'
+    if you are using Mongoid.
+  ** Set the value for "config.pepper" to a *unique* value for your program.
+    It *must* be unique, this value is used to chaff the encryption of
+    passwords by your application. Security will be compromised if it's not
+    unique or if it becomes *known to outsiders*.
+    Generate the value by running this program once.
+      require 'securerandom'
+      print %Q(config.pepper = "#{SecureRandom.hex(64)}"\n)
+
+** Edit one of your environment files, like <tt>config/application.rb</tt>, to add the
+  URL info to be used in email messages to users from the user management
+  system. While testing, this might be:
+    config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  but it must be set to the correct external URL when your application is
+  running for
+  real users.
+** Add <tt>authenticate_user!</tt> and other Devise helpers to your controllers
+  as appropriate.
+
+
 
 h2. Getting Started
 
@@ -36,7 +66,7 @@ This is the only documentation.
 
 h4. Issues
 
-Not found.
+* Report issues here[https://github.com/regedor/citygate/issues].
 
 h2. Similar Projects
 

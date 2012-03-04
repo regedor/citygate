@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
 
-  mount Citygate::Engine => "/citygate"
+  mount Citygate::Engine => "/"
 end

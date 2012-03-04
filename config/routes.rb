@@ -1,6 +1,6 @@
-Citygate::Engine.routes.draw do
+Rails.application.routes.draw do
   root :to => "home#index"
 
-  devise_for :users
+  devise_for :users 
   resources :users, :only => :show
 end
