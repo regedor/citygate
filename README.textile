@@ -21,7 +21,10 @@ To use this application, you will need:
 
 h2. Installing the Application
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Add to you routes:
+  mount Citygate::Engine => "/citygate"
+
+rake citygate:install:migrations
 
 h2. Getting Started
 
