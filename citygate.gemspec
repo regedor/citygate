@@ -3,13 +3,13 @@ $:.push File.expand_path("../lib", __FILE__)
 # Maintain your gem's version:
 require "citygate/version"
 require 'rbconfig'
-HOST_OS = RbConfig::CONFIG['host_os']
+HOST_OS ||= RbConfig::CONFIG['host_os']
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "citygate"
   s.version     = Citygate::VERSION
-  s.authors     = ["Miguel Regedor"]
+  s.authors     = ["Group Buddies"]
   s.email       = ["regedor@groupbuddies.com"]
   s.summary     = "Simple authentication and user management Engine."
   s.description = "Citygate is an Engine that provides user model with sign up and log in, admin backend for managing users and a simple comunication system."

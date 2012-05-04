@@ -11,10 +11,20 @@
   %body{:class => params[:controller]}
     #container.container
       %header
+        .navbar.navbar-fixed-top
+          .navbar-inner
+            .container
+              %ul.nav
+                %li.active
+                  <a href="/">Home</a>
+                %li
+                  <a href="#">Link</a>
+                %li
+                  <a href="#">Link</a>
+        %h1 Admin PANEL
         %nav
           %ul.hmenu
             = render 'shared/navigation'
-            %p kj
         - flash.each do |name, msg|
           = content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String)
       #main{:role => "main"}
